@@ -13,7 +13,7 @@ I have made some minor changes in the cpp program taken from https://github.com/
 
 Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of motion-planner-final.cpp. Output of this program will be two files : prefix_file_1.txt and suffix_file_1.txt. These are the prefix and suffix cycles.
 
-Put these two files in python_scripts folder where driver python codes are present. 
+Put these two files in python_scripts folder where driver python codes are present.
 
 Use following commands on terminal to run the code:
 cd catkin_ws/
