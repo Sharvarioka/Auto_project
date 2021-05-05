@@ -1,4 +1,4 @@
-# Auto_project
+# CS659-Course project
 This repository contains simulation of T* algorithm on turtlebot3(burger) and husky robots.  Implementing_t_star_on_Turtlebot3 contains the actual simulation whereas rest packages are the pre-requisite folders for turtlebot3 and husky simulation.
 
 **Ros version**- noetic<br />
