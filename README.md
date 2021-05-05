@@ -1,5 +1,5 @@
 # Auto_project
-This repository contains simulation of T* algorithm on turtlebot3(burger) and husky robots.  Implementing_t_star_on_Turtlebot3 contains the actual simulation whereas rest packages are the pre-requisite folders to for turtlebot3 and husky simulation.
+This repository contains simulation of T* algorithm on turtlebot3(burger) and husky robots.  Implementing_t_star_on_Turtlebot3 contains the actual simulation whereas rest packages are the pre-requisite folders for turtlebot3 and husky simulation.
 
 **Ros version**- noetic<br />
 **Ubuntu version** -20.04
@@ -14,7 +14,7 @@ I have made some minor changes in the cpp program taken from https://github.com/
 **query_papereg.dat**- LTL query must be specified here <br />
 **cfile_rec.dat**- 2D workspace discription file.
 
-Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of motion-planner-final.cpp. Output of this program will be two files : prefix_file_1.txt and suffix_file_1.txt. These are the prefix and suffix cycles.
+Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of **motion-planner-final.cpp**. Output of this program will be two files : **prefix_file_1.txt and suffix_file_1.txt**. These are the prefix and suffix cycles.
 
 Put these two files in python_scripts folder where driver python codes are present.
 
