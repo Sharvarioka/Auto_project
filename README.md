@@ -1,7 +1,9 @@
 # Auto_project
 This repository contains simulation of T* algorithm on turtlebot3(burger) and husky robots.  Implementing_t_star_on_Turtlebot3 contains the actual simulation whereas rest packages are the pre-requisite folders to for turtlebot3 and husky simulation.
+
 Ros version- noetic
 Ubuntu version -20.04
+
 Follow the instructions on http://wiki.ros.org/noetic/Installation/Ubuntu to install ros noetic.
 To install and configure ros environment, follow http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 Now in the src folder of catkin workspace clone this git repo.
