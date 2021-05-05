@@ -14,9 +14,12 @@ I have made some minor changes in the cpp program taken from https://github.com/
 **query_papereg.dat**- LTL query must be specified here <br />
 **cfile_rec.dat**- 2D workspace discription file.
 
-Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of **motion-planner-final.cpp**. Output of this program will be two files : **prefix_file_1.txt and suffix_file_1.txt**. These are the prefix and suffix cycles.
+Follow step 8 given in https://github.com/DhavalGujarathi/T-.git to use the tool ltl2tgba. <br />
+**motion-planner-final.cpp** provides prefix and suffix cycles in **prefix_file_1.txt and suffix_file_1.txt** respectively. Put these two files in python_scripts folder where driver python codes are present.<br />
+**Compile:** g++ -std=c++11 motion-planner-final.cpp -o motion-planner-final <br />
+**Execute:** ./motion-planner-final cfile_rec.dat
 
-Put these two files in python_scripts folder where driver python codes are present.
+
 
 Use following **commands** on terminal to open world: <br />
 cd catkin_ws/ <br />
