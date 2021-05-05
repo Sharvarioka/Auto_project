@@ -4,7 +4,7 @@ This repository contains simulation of T* algorithm on turtlebot3(burger) and hu
 **Ros version**- noetic<br />
 **Ubuntu version** -20.04
 
-Follow the instructions: __ 
+Follow the instructions: <br />
 **To install ros noetic:** http://wiki.ros.org/noetic/Installation/Ubuntu 
 **To install and configure ros environment:** http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment 
 Now in the src folder of catkin workspace clone this git repo.
