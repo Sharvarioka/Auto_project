@@ -35,4 +35,4 @@ rosrun t_star_turtlebot ControllerUpdate.py <br />
 
 You can also use online version of ros as well! <br />
 Use https://www.theconstructsim.com/develop-the-robots-of-the-future/. Create the account and upload the files for ros project. <br />
-To run the simulation of husky bot, I used this version where you need upload the git repo files and select empty world map with husky robot. Use the command rosrun t_star_turtlebot ControllerUpdateHusky.py.
+To run the simulation of husky bot, I used this version where you need upload the git repo files and select empty world map with husky robot. Use the command rosrun t_star_turtlebot ControllerUpdateHusky.py. Here I have used the default world map on ros desktop and hence have provided the coordinates manually but we can use the prefix_file and suffix_file to read coordinates as well.
