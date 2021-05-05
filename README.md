@@ -5,13 +5,13 @@ This repository contains simulation of T* algorithm on turtlebot3(burger) and hu
 **Ubuntu version** -20.04
 
 Follow the instructions: <br />
-**To install ros noetic:** http://wiki.ros.org/noetic/Installation/Ubuntu 
-**To install and configure ros environment:** http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment 
-Now in the src folder of catkin workspace clone this git repo.
+**To install ros noetic:** http://wiki.ros.org/noetic/Installation/Ubuntu <br />
+**To install and configure ros environment:** http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment <br />
+Now in the src folder of catkin workspace clone this git repo.<br />
 
  
-I have made some minor changes in the cpp program taken from https://github.com/DhavalGujarathi/T-.git. This program gives the coordinates of path using T* algorithm. The modified cpp program is uploaded in this repo with name motion-planner-final.cpp. This program requires files such as:
-**query_papereg.dat**- LTL query must be specified here,
+I have made some minor changes in the cpp program taken from https://github.com/DhavalGujarathi/T-.git. This program gives the coordinates of path using T* algorithm. The modified cpp program is uploaded in this repo with name motion-planner-final.cpp. This program requires files such as:<br />
+**query_papereg.dat**- LTL query must be specified here <br />
 **cfile_rec.dat**- 2D workspace discription file.
 
 Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of motion-planner-final.cpp. Output of this program will be two files : prefix_file_1.txt and suffix_file_1.txt. These are the prefix and suffix cycles.
