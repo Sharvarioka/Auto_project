@@ -10,7 +10,6 @@ coordinates_suffix=[]
 
 
 with open('/home/sharvari_ubuntu/catkin_ws/src/Implementing_t_star_on_Turtlebot3/Project_files/t_star_turtlebot/python_scripts/prefix_file_1.txt', 'r') as file:
-# with open("prefix_file_1.txt") as file : 
     for line in file:
         words=[]
         line_array=[]
