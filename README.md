@@ -1,10 +1,12 @@
 # Auto_project
+This repository contains simulation of T* algorithm on turtlebot3(burger) and husky robots.  Implementing_t_star_on_Turtlebot3 contains the actual simulation whereas rest packages are the pre-requisite folders to for turtlebot3 and husky simulation.
 Ros version- noetic
 Ubuntu version -20.04
 Follow the instructions on http://wiki.ros.org/noetic/Installation/Ubuntu to install ros noetic.
 To install and configure ros environment, follow http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 Now in the src folder of catkin workspace clone this git repo.
 
+ 
 I have made some minor changes in the cpp program taken from https://github.com/DhavalGujarathi/T-.git. This program gives the coordinates of path using T* algorithm. The modified cpp program is uploaded in this repo with name motion-planner-final.cpp. This program requires files such as: query_papereg.dat, cfile_rec.dat .
 
 Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of motion-planner-final.cpp. Output of this program will be two files : prefix_file_1.txt and suffix_file_1.txt. These are the prefix and suffix cycles.
