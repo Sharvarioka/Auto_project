@@ -1,0 +1,31 @@
+
+<launch>
+  <arg name="laser_enabled" default="$(optenv HUSKY_LMS1XX_ENABLED 1)"/>
+  <arg name="realsense_enabled" default="$(optenv HUSKY_REALSENSE_ENABLED 0)"/>
+  <arg name="x_pos" default="0.0"/>
+  <arg name="y_pos" default="0.0"/>
+  <arg name="z_pos" default="0.0"/>
+ <arg name="robot_namespace" default="/"/> 
+    
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find t_star_turtlebot)/world_files/nowall.world"/>  
+        <!-- <arg name="world_name" value="$(arg world_name)"/> --><!-- world_name is wrt GAZEBO_RESOURCE_PATH environment variable -->
+
+    <arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="gui" default="true"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+  </include>
+
+<!-- Spawn husky into Gazebo -->
+ <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+    <arg name="realsense_enabled" value="$(arg realsense_enabled)"/>
+    <arg name="x" value="$(arg x_pos)"/>
+    <arg name="y" value="$(arg y_pos)"/>
+  </include> 
+</launch>
+
+
+
