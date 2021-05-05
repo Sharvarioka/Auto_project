@@ -4,27 +4,28 @@ This repository contains simulation of T* algorithm on turtlebot3(burger) and hu
 **Ros version**- noetic
 **Ubuntu version** -20.04
 
-Follow the instructions on http://wiki.ros.org/noetic/Installation/Ubuntu to install ros noetic.__
-To install and configure ros environment, follow http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment__
-Now in the src folder of catkin workspace clone this git repo.__
+Follow the instructions: __ 
+**To install ros noetic:** http://wiki.ros.org/noetic/Installation/Ubuntu 
+**To install and configure ros environment:** http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment 
+Now in the src folder of catkin workspace clone this git repo.
 
  
 I have made some minor changes in the cpp program taken from https://github.com/DhavalGujarathi/T-.git. This program gives the coordinates of path using T* algorithm. The modified cpp program is uploaded in this repo with name motion-planner-final.cpp. This program requires files such as:
-query_papereg.dat- LTL query must be specified here,
-cfile_rec.dat- 2D workspace discription file.
+**query_papereg.dat**- LTL query must be specified here,
+**cfile_rec.dat**- 2D workspace discription file.
 
 Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get the outout of motion-planner-final.cpp. Output of this program will be two files : prefix_file_1.txt and suffix_file_1.txt. These are the prefix and suffix cycles.
 
 Put these two files in python_scripts folder where driver python codes are present.
 
-Use following commands on terminal to run the code:
+Use following **commands** on terminal to open world:
 cd catkin_ws/
 source devel/setup.bash
 catkin_make
 roslaunch t_star_turtlebot t_star_launch_turtlebot.launch x_pos:=0.5 y_pos:=0.5
 This will open the world and spawn robot
 
-In another terminal use following commands to run the driver code:
+In another terminal use following **commands to run the driver code**:
 cd catkin_ws/
 source devel/setup.bash
 rosrun t_star_turtlebot ControllerUpdate.py
