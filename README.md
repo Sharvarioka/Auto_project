@@ -18,17 +18,17 @@ Follow the procedure given in https://github.com/DhavalGujarathi/T-.git to get t
 
 Put these two files in python_scripts folder where driver python codes are present.
 
-Use following **commands** on terminal to open world:
-cd catkin_ws/
-source devel/setup.bash
-catkin_make
-roslaunch t_star_turtlebot t_star_launch_turtlebot.launch x_pos:=0.5 y_pos:=0.5
-This will open the world and spawn robot
+Use following **commands** on terminal to open world: <br />
+cd catkin_ws/ <br />
+source devel/setup.bash <br />
+catkin_make <br />
+roslaunch t_star_turtlebot t_star_launch_turtlebot.launch x_pos:=0.5 y_pos:=0.5 <br />
+This will open the world and spawn robot. <br />
 
-In another terminal use following **commands to run the driver code**:
-cd catkin_ws/
-source devel/setup.bash
-rosrun t_star_turtlebot ControllerUpdate.py
+In another terminal use following **commands to run the driver code**:  <br />
+cd catkin_ws/<br />
+source devel/setup.bash <br />
+rosrun t_star_turtlebot ControllerUpdate.py <br />
 
 You can also use online version of ros as well!
 Use https://www.theconstructsim.com/develop-the-robots-of-the-future/. Create the account and upload the files for ros project.
