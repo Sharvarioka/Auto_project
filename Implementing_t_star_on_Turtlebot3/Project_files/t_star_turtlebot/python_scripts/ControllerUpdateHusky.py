@@ -44,8 +44,6 @@ coordinates_suffix=[
 [6,7]
 ]
 
-# base_dir = rospy.get_param('arg_name')
-# with open(base_dir + '/prefix_file.txt', 'r') as file:
 # # with open("prefix_file.txt") as file : 
 #     for line in file:
 #         words=[]
@@ -132,33 +130,10 @@ def actualExec():
 
         angle_to_goal = atan2(inc_y, inc_x)
 
-        # print(angle_to_goal)
-        # print(theta)
-        
-        #going on negative left direction on x axis
-
-        # if temp.x>goal.x and abs(temp.y-goal.y)<=0.2: 
-        #     print("angle_to_goal",angle_to_goal)
-        #     print("theta ",theta)
-        #     if (angle_to_goal - theta)<= -0.25:
-        #         speed.linear.x = 0.0
-        #         speed.angular.z = 0.25
-        #     elif (angle_to_goal - theta)> 0.25:
-        #         speed.linear.x = 0.0
-        #         speed.angular.z = -0.25
-        #     else:
-        #         speed.linear.x = 0.45
-        #         speed.angular.z = 0.0
-   
-        # else:           
         if abs(angle_to_goal - theta)> 0.25:
                 speed.linear.x = 0.0
                 speed.angular.z = 0.3
-                
-        # elif (angle_to_goal - theta)<= -0.25:
-        #         speed.linear.x = 0.0
-        #         speed.angular.z = -0.25                         
-            
+                  
         else:
             speed.linear.x = 0.4
             speed.angular.z = 0.0
